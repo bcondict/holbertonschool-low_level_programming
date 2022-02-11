@@ -33,12 +33,12 @@ Bolean Operators are words that connect search terms to create logical phrases, 
 - **not**= Excludes articles that use the keyword 
 
 ### What the the relational operators and how to use them
-- > means greater than 
-- < means less than
-- >= means greater than or equal to
-- <= means less than or equal to
-- == means equal to
-- != means not equal to
+- ">" means greater than 
+- "<" means less than
+- ">=" means greater than or equal to
+- "<=" means less than or equal to
+- "==" means equal to
+- "!=" means not equal to
 
 ### What values are considered TRUE and FALSE in C
 **false** is represented with 0 and **true** is represented with 1, also whatever other number can be represented as true.
