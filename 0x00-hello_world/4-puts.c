@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 // C program to show the use of puts
 
