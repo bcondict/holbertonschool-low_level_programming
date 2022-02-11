@@ -71,15 +71,13 @@ int main()
 
 ### How to use comments
 for make comment in c there are different ways to like 
-
+```
 " /* the comment */ "
 "/**
 *
-
 *
-
 */" 
-
+```
 ### how to declare variables of *types char, int, unsigned int*
 after open your "int main ()" you put the variable that you want to open, a variable is like a box and the kind of variable the size of that box.
 
