@@ -75,6 +75,7 @@ for make comment in c there are different ways to like
 " /* the comment */ "
 "/**
 *
+* the comment 
 *
 */" 
 ```
