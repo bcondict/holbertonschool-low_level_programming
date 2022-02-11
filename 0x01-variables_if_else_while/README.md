@@ -73,9 +73,11 @@ int main()
 for make comment in c there are different ways to like 
 
 " /* the comment */ "
-"/** 
+"/**
 *
+
 *
+
 */" 
 
 ### how to declare variables of *types char, int, unsigned int*
