@@ -71,9 +71,10 @@ int main()
 
 ### How to use comments
 for make comment in c there are different ways to like 
+
 " /* the comment */ "
 "/** 
-* other way to comment
+*
 *
 */" 
 
