@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-	for (int x = 'A'; x <= 'z'; x++)
+	for (int x = 'A'; x <= 'Z'; x++)
 	{
 		putchar(tolowe(x));
 	}
