@@ -7,8 +7,7 @@ int main(void)
 {
 	for (int x = 'a'; x <= 'z' ; x++)
 	{
-		x = tolowe(x);
-		putchar(x);
+		putchar(tolowe(x));
 	}
 	return (0);
 }
