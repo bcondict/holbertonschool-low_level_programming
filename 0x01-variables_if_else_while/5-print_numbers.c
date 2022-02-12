@@ -7,7 +7,7 @@ int main(void)
 {
 	char x;
 
-	for (x = '0'; x <= '10'; x++)
+	for (x = '0'; x <= '10')
 		putchar(x);
 
 	putchar('\n');
