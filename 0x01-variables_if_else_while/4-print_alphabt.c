@@ -7,9 +7,7 @@ int main(void)
 {
 	char x;
 
-	if (x == "e" && x == "q")
-		return (0);
-	for (x = 'a'; x <= 'z'; x++)
+	for (x = 'a'; x <= 'z'; x != 'e''q'; x++)
 		putchar(x);
 
 	putchar('\n');
