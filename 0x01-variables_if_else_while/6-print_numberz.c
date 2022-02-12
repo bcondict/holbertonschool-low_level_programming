@@ -8,7 +8,7 @@ int main(void)
 	int x;
 
 	for (x = 0; x < 10;)
-		putchar(x);
+		putchar("%d", x);
 
 	putchar('\n');
 	return (0);
