@@ -5,11 +5,10 @@
 */
 int main(void)
 {
-	char x;
 	int x;
 
 	for (x = '0'; x <= '9';)
-		printf("%c\n");
+		printf("%d\n");
 
 	return (0);
 }
