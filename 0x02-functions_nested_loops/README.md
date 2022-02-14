@@ -28,6 +28,7 @@ example
 ```
 
 bibliography
+
 https://www.javatpoint.com/nested-loops-in-c
 https://www.tutorialspoint.com/cprogramming/c_functions.htm#:~:text=A%20function%20is%20a%20group,your%20code%20into%20separate%20functions.
 https://www.geeksforgeeks.org/difference-between-definition-and-declaration/
