@@ -32,18 +32,22 @@ main() function is an entry point of the programming code to start its execution
 
 - printf= Generally, printf() function is used to print the text along with the values. If you want to print % as a string or text, you will have to use ‘%%’. Neither single % will print anything nor it will show any error or warning. example:
 
+```
 int main() {
 
    printf("Hello%\n");
    return 0;
 }
+```
 
 *output*
 
+```
 Hello%
+```
 
 - puts= use puts could be easier or just simplier than prinf, to use it use:
-
+```
 int main()
 {
 
@@ -52,9 +56,11 @@ int main()
     getchar();
     return 0;
 }
-
+```
 *output*
+```
 hello
+```
 
 ### How to compile using gcc
 when you got your .c file, write gcc <filename> and it will become to a executable file with "a" as name.
