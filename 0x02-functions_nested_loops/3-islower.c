@@ -3,7 +3,7 @@
 /**
  * _islower - check c variable
  * @c: random letter
- * return: (0) if it's wrong
+ * Return: (0) if it's wrong
  */
 int _islower(int c)
 
