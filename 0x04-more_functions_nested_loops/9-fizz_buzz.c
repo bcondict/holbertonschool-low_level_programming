@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - print numbers 1 to 100 with 3 and 5 condition
  *
@@ -30,7 +31,6 @@ int main(void)
 		}
 		else if (a == 100)
 			printf("%d", a);
-			     
 		else
 		{
 			printf("%d", a);
