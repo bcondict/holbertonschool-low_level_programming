@@ -8,7 +8,7 @@ int main(void)
 {
 	int a, b, c;
 
-	for (a = 1; a <= 100; a++)
+	for (a = 1; a < 100; a++)
 	{
 		b = a % 3;
 		c = a % 5;
@@ -28,12 +28,16 @@ int main(void)
 			printf("Buzz");
 			printf(" ");
 		}
+		else if (a == 100)
+			printf("%d", a);
+			     
 		else
 		{
 			printf("%d", a);
 			printf(" ");
 		}
 	}
+	printf("Buzz");
 	printf("\n");
 	return (0);
 }
