@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
  * main - print numbers 1 to 100 with 3 and 5 condition
- * 
+ *
  * Return: Always 0
  */
-int main (void)
+int main(void)
 {
 	int a, b, c;
 
