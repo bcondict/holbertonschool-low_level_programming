@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts - print other character of a string
+ * puts2 - print other character of a string
  * @str: string name
  * Return: Always 0.
  */
@@ -13,7 +13,7 @@ void puts2(char *str)
 		if ((a % 2) == 0)
 			_putchar (str[a]);
 		else
-			continue;	
+			continue;
 	}
 	_putchar('\n');
 }
