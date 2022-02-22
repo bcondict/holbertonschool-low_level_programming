@@ -4,7 +4,7 @@
  * @str: string name
  * Return: Always 0.
  */
-void puts(char *str)
+void puts2(char *str)
 {
 	int a;
 
