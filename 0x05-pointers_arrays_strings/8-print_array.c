@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_array -
- * @a:
- * @n:
- * 
+ * print_array - prints n elements of an array of integers
+ * @a: punter number
+ * @n: variable
+ * Return: Always 0.
  */
 void print_array(int *a, int n)
 {
