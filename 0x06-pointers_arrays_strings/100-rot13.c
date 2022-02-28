@@ -10,14 +10,12 @@ char *rot13(char *n)
 	char a_to_z[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char encript[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	if (*n != '\0')
+	for (a = 0; n[a] != '\0'; a++)
 	{
-		for (a = 0; n[a] != '\0'; a++)
-		{
-			for (b = 0; a_to_z[b] != '\0'; b++)
-				if (n[a] == a_to_z[b])
-					n[a] = encript[b];
-		}
+		for (b = 0; a_to_z[b] != '\0'; b++)
+			if (n[a] == a_to_z[b])
+				n[a] = encript[b];
 	}
+
 	return (n);
 }
