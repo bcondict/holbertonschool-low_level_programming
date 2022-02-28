@@ -15,6 +15,7 @@ char *rot13(char *n)
 		for (b = 0; a_to_z[b] != '\0'; b++)
 			if (n[a] == a_to_z[b])
 				n[a] = encript[b];
+				break;
 	}
 
 	return (n);
