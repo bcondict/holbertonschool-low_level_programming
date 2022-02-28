@@ -1,21 +1,22 @@
 #include "main.h"
 /**
- * 
+ * rot13 - encrpt rot 13
  * @n: pointer of array
  * Return: pointer n
  */
-char *leet(char *n)
+char *rot13(char *n)
 {
-	char let[11] = {'a', 'A', 'e', 'E', 't', 'T', 'l', 'L', 'o', 'O'};
-	char num[11] = {'4', '4', '3', '3', '7', '7', '1', '1', '0', '0'};
 	int a, b;
+	char a_to_z[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char encript[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (a = 0; n[a] != '\0'; a++)
+	if (*n != '\0')
 	{
-		for (b = 0; let[b] != '\0'; b++)
+		for (a = 0; n[a] != '\0'; a++)
 		{
-			if (n[a] == let[b])
-				n[a] = num[b];
+			for (b = 0; a_to_z[b] != '\0'; b++)
+				if (n[a] == a_to_z[b])
+					n[a] = encript[b];
 		}
 	}
 	return (n);
