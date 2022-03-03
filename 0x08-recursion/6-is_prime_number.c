@@ -15,7 +15,7 @@ int is_prime_number(int n)
  * @n: prime number?
  * Return: 0 if n is false and 1 if is false
  */
-int prove_of_prim((int a, int n))
+int prove_of_prim(int a, int n)
 {
 	if (n <= 1 || (n != a && n % a == 0))
 		return (0);
