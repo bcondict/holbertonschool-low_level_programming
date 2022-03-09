@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 		str2++;
 
 	/* apart a memory space of the size of both strings with a newly space */
-	concat = malloc((str1 + str2) + 1)
+	concat = malloc((str1 + str2) + 1);
 
 	/* if both string are null return a null */
 	if (concat == NULL)
