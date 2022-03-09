@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	for (a = 0; str[a]; a++)
 		counter++;
 
-	/* gives enought space for copy string + 1 space */
+	/* gives enought space for copy string + newly space */
 	copy = malloc(sizeof(char) * (counter + 1));
 
 	if (copy == NULL)
