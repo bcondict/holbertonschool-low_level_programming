@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * alloc_grid - pointer 2d array of integers
+ * alloc_grid - run 2d arry and initialize every element to 0
  * @width: obviously the width of 2d array duh
  * @height: same but height
  * Return: null if wdth or hght are 0 or less and different of null
