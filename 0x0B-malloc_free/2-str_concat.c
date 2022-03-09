@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 
 	/* second part of string with string 2 (s2)*/
 	for (b = 0; b < str2; b++)
-		concat[a + b] = str2[b];
+		concat[str1 + b] = str2[b];
 
 	return (concat);
 }
