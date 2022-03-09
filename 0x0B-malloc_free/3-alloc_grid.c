@@ -17,7 +17,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 
 	/* asign a space in memory of integer mul the height value greater than 0*/
-	arrayTwoD = malloc(sizeof(int) * height);
+	arrayTwoD = malloc(sizeof(int *) * height);
 
 	if (arrayTwoD == NULL)
 		return (NULL);
@@ -31,8 +31,8 @@ int **alloc_grid(int width, int height)
 		/* pointer at the end of 2d array run width and empty the space*/
 		if (arrayTwoD[hght_ary] == NULL)
 		{
-			for (; hght_ary >= 0; hght_ary--)
-				free(arrayTwoD[hght_ary]);
+			for (wdth_ary = 0; wdth_ary < hght_ary; wdth_ary++)
+				free(arrayTwoD[wdth_ary]);
 			free(arrayTwoD);
 			return (NULL);
 		}
