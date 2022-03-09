@@ -19,7 +19,7 @@ char *_strdup(char *str)
 		counter++;
 
 	/* gives enought space for copy string + 1 space */
-	copy = malloc(sizeof(char) * (counter + 1))
+	copy = malloc(sizeof(char) * (counter + 1));
 
 	if (copy == NULL)
 		return (NULL);
