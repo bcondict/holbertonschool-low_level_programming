@@ -31,8 +31,8 @@ int **alloc_grid(int width, int height)
 		/* pointer at the end of 2d array run width and empty the space*/
 		if (arrayTwoD[hght_ary] == NULL)
 		{
-			for (wdth_ary = 0; wdth_ary < hght_ary; wdth_ary++)
-				free(arrayTwoD[wdth_ary]);
+			for (; hght_ary >= 0; hght_ary--)
+				free(arrayTwoD[hght_ary]);
 			free(arrayTwoD);
 			return (NULL);
 		}
