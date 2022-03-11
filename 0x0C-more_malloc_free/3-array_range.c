@@ -1,12 +1,14 @@
 #include "main.h"
 /**
- * @brief
- *
+ * array_range - 
+ * @min: number to star count
+ * @max: number to finish count
+ * Return: return string with value with min to max
  */
 int *array_range(int min, int max)
 {
     int *s;
-    unsigned int i;
+    int i;
 
     if (min > max)
         return (0);
