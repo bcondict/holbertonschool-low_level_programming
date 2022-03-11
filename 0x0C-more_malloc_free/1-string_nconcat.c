@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strin_nconcat - function to concatenate 2 strings
+ * string_nconcat - function to concatenate 2 strings
  * @s1: string 1
  * @s2: string 2
  * @n: number of bytes of new string
@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		conc_st[i] = s1[i];
 	for (i = 0; i < k; i++)
 		conc_st[i + j] = s2[i];
-	
+
 	conc_st[j + k] = '\0';
 
 	return (conc_st);
