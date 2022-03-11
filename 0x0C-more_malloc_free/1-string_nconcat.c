@@ -8,18 +8,18 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, k;
+	unsigned int i, j = 0, k = 0;
 	char *conc_st;
 
 	if (s1)
 	{
-		for (j = 0; s1[j]; j++)
-		;
+		while (s1[j])
+			j++;
 	}
 	if (s2)
 	{
-		for (k = 0; s2[k]; k++)
-		;
+		while (s2[k])
+			k++;
 	}
 
 	if (k > n)
