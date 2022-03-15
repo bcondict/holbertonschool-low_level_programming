@@ -26,4 +26,20 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
+#define STRLEN(STRING, I)\
+do {\
+	for (I = 0; STRING[I]; I++)\
+	{} \
+} while (0)
+
+#define STRCPY(DEST, SRC, I)\
+do {\
+	for (I = 0; SRC[I]; I++)\
+	{\
+		DEST[I] = SRC[I];\
+	} \
+} while (0)
+
+
+
 #endif
