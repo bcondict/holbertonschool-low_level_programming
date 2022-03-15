@@ -19,16 +19,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 	STRLEN(name, name_len);
 	STRLEN(owner, own_len);
 
-	c_name = malloc(sizeof(char) * name_len);
+	c_name = malloc(sizeof(char) * name_len + 1);
 	if (c_name == NULL)
+	{
+		free(p_ndog);
 		return (NULL);
+	}
 
-	c_owner = malloc(sizeof(char) * own_len);
+	c_owner = malloc(sizeof(char) * own_len + 1);
 	if (c_owner == NULL)
+	{
+		free(p_ndog);
+		free(c_name);
 		return (NULL);
+	}
 
 	STRCPY(c_name, name, i);
+	c_name[i] = '\0';
 	STRCPY(c_owner, owner, i);
+	c_owner[i] = '\0';
 
 	p_ndog->name = c_name;
 	p_ndog->age = age;
