@@ -6,23 +6,18 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	int result = 0, value = 0;
+	int value = 0;
 	unsigned int i = 0;
 	va_list numbers;
 
-
-	if (n == 0)
-		return (0);
-
 	va_start(numbers, n);
 
-	for (; i < n; i++)
+	for (; i < n; ++i)
 	{
-		value = va_arg(numbers, int);
-		result += value;
+		value += va_arg(numbers, int);
 	}
 
 	va_end(numbers);
 
-	return (result);
+	return (value);
 }
