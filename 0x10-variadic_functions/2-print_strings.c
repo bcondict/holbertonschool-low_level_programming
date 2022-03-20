@@ -7,13 +7,13 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i = 0;
+	unsigned int i;
 	char *new_string;
 	va_list s_complete;
 
 	va_start(s_complete, n);
 
-	for (; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		new_string = va_arg(s_complete, char *);
 
