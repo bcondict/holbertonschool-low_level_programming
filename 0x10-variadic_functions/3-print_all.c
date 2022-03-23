@@ -3,10 +3,10 @@
 /**
  * print_char - print a character
  * @arg: character to print
- *
  * Return: void
  */
-void (print_char)(va_list arg)
+
+void print_char(va_list arg)
 {
 	printf("%c", va_arg(arg, int));
 }
@@ -14,26 +14,28 @@ void (print_char)(va_list arg)
 /**
  * print_int - function to print a integer
  * @arg: integer to print
+ * Return: void
  */
-void (print_int)(va_lint arg)
+
+void print_int(va_lint arg)
 {
 	printf("%d", va_arg(arg, int));
 }
 
 /**
- * print_float - function to print a float
+ * print_float - print a float
  * @arg: float to print
  */
-void (print_float)(va_list arg)
+void print_float(va_list arg)
 {
 	printf("%f", va_arg(arg, double));
 }
 
 /**
- * print_string - function to print a string
+ * print_string - prints a string
  * @arg: string to print
  */
-void (print_strings)(va_list arg)
+void print_string(va_list arg)
 {
 	char *str = va_arg(arg, char *);
 
