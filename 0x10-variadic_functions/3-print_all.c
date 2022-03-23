@@ -17,7 +17,7 @@ void print_char(va_list arg)
  * Return: void
  */
 
-void print_int(va_lint arg)
+void print_int(va_list arg)
 {
 	printf("%d", va_arg(arg, int));
 }
@@ -59,7 +59,7 @@ void print_all(const char * const format, ...)
 	};
 	va_list list;
 	int i = 0, j = 0;
-	char separator = "";
+	char *separator = "";
 
 	va_start(list, format);
 
