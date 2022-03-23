@@ -63,9 +63,11 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 
-	for (; format && format[i]; i++)
+	while (format && format[i])
 	{
-		for (j = 0; s_arg[j].name; j++)
+		j = 0;
+		
+		while (s_arg[j].name)
 		{
 			if (*(s_arg[j].name) == format[i])
 			{
@@ -74,8 +76,9 @@ void print_all(const char * const format, ...)
 				separator = ", ";
 				break;
 			}
+			j++
 		}
-
+		i++
 	}
 
 	va_end(list);
