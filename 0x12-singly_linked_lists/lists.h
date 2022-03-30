@@ -2,8 +2,10 @@
 #define _FILE_
 
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
+#include <string.h>
+#include <stdarg.h>
+#include <stddef.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
