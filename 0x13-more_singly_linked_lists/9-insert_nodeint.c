@@ -2,7 +2,7 @@
 /**
  * insert_nodeint_at_index - inserts a new node in a given position
  * @head: current node
- * @idx: position to inser
+ * @index: position to inser
  * @n: number to insert
  * Return: adress of new node
  */
@@ -12,7 +12,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 	listint_t *idx_node = NULL;
 
 	idx_node = *head;
-	
+
 	if (head == NULL || *head == NULL)
 		return (NULL);
 
@@ -20,12 +20,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 	if (new_pointer == NULL)
 		return (NULL);
 	new_pointer->n = n;
-	
+
 	if (index == 0)
 	{
 		new_pointer->next = idx_node;
 		*head = new_pointer;
-		return(*head);
+		return (*head);
 	}
 
 	while (index > 1)
@@ -35,7 +35,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 		if (idx_node == NULL)
 		{
 			free(new_pointer);
-			return(NULL);
+			return (NULL);
 		}
 	}
 	new_pointer->next = idx_node->next;
