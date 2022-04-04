@@ -6,7 +6,7 @@
  * Return: 1 if it works or -1 if an error
  */
 
-int set_bit(unsigned long int *n, unsigned int index);
+int set_bit(unsigned long int *n, unsigned int index)
 {
 	int num1 = 0;
 
