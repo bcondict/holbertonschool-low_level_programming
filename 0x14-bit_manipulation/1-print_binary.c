@@ -4,7 +4,7 @@
  * @n: number to convert in binary
  * Return: always 0 (success)
  */
-void print_binary(unsigned long int n);
+void print_binary(unsigned long int n)
 {
 	if (n > 1)
 		print_binary(n >> 1);
