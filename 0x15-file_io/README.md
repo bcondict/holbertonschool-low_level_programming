@@ -1,7 +1,7 @@
 # File I/O
 
 ### How to create, open, close, read and write files
-*__ CREATE / OPEN __*
+*** CREATE / OPEN ***
 
 ```
 FILE *fp;
@@ -10,7 +10,7 @@ fp = fopen ("file_name", "mode");
 the *fopen* is a standard funcion wich is used to open a file
 - if the file isn't present on it will  be created and opened
 - if the file is already present it will be directly opened
-*__ CLOSE __*
+*** CLOSE ***
 ```
 fclose (fp);
 ```
