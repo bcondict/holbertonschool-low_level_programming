@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  * read_textfile - reads a text file and prints it to the POSIX standard output
- * @filename: 
- *
+ * @filename: name of the new file
+ * @letters: number of letter we want
+ * Return: number of letters that could read and print
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -12,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	buf = malloc(sizeof(letters * sizeof(char + 1));
+	buf = malloc(letters * sizeof(char) + 1);
 	if (buf == NULL)
 		return (0);
 
