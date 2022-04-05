@@ -3,7 +3,7 @@
 * append_text_to_file - appends text at the end of a file
 * @filename: name of the file
 * @text_content: text to add at end
-* return 1 if succes and -1 on failure
+* Return: 1 if succes and -1 on failure
 */
 int append_text_to_file(const char *filename, char *text_content)
 {
@@ -26,10 +26,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	write_out = write(fd, text_content, counter);
 	if (write_out == -1)
 	{
-		close (fd);
+		close(fd);
 		return (-1);
 	}
 
-	close (fd);
+	close(fd);
 	return (1);
 }
