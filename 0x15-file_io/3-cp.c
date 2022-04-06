@@ -35,7 +35,7 @@ int copy_src_to_dest(const char *src, const char *dest)
 		return (-2);
 	buf = (char *)malloc(sizeof(char) * 1024);
 	if (buf == NULL)
-		return (0);
+		return (-1);
 	while (read_out > 0)
 	{
 		read_out = read(fd1, buf, 1024);
@@ -44,7 +44,7 @@ int copy_src_to_dest(const char *src, const char *dest)
 			error(fd1, fd2, buf);
 			return (-1);
 		}
-		write_out = write(fd1, buf, read_out);
+		write_out = write(fd2, buf, read_out);
 		if (write_out == -1)
 		{
 			error(fd1, fd2, buf);
