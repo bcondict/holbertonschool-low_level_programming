@@ -5,7 +5,7 @@
 * @fd1: file descriptor 1 to close
 * @fd2: file descriptor 2 to close
 * @buf: space buffer to be free
-* Return: 
+* Return: always 0 (success)
 */
 void error(int fd1, int fd2, char *buf)
 {
@@ -26,12 +26,6 @@ int copy_src_to_dest(const char *src, const char *dest)
 	int fd1 = 0, fd2 = 0, aux = 0;
 	int write_out = 0, read_out = 1;
 	char *buf;
-
-	if (src == NULL)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
-		exit(98);
-	}
 
 	fd1 = open(src, O_RDONLY);
 	if (fd1 == -1)
@@ -55,7 +49,7 @@ int copy_src_to_dest(const char *src, const char *dest)
 		{
 			error(fd1, fd2, buf);
 			return (-2);
-		}		
+		}
 	}
 	aux = close(fd1);
 	if (aux == -1)
@@ -82,7 +76,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	
+
 	check = copy_src_to_dest(argv[1], argv[2]);
 	if (check == -1)
 	{
