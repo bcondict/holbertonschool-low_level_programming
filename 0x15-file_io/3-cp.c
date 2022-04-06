@@ -30,7 +30,7 @@ int copy_src_to_dest(const char *src, const char *dest)
 	fd1 = open(src, O_RDONLY);
 	if (fd1 == -1)
 		return (-1);
-	fd2 = open(dest, O_CREAT | O_WRONLY | O_TRUNC);
+	fd2 = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd2 == -1)
 		return (-2);
 	buf = (char *)malloc(sizeof(char) * 1024);
