@@ -29,7 +29,7 @@ int copy_src_to_dest(const char *src, const char *dest)
 
 	if (src == NULL)
 	{
-		dprint(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
 	}
 
@@ -39,7 +39,7 @@ int copy_src_to_dest(const char *src, const char *dest)
 	fd2 = open(dest, O_CREAT | O_WRONLY | O_TRUNC);
 	if (fd2 == -1)
 		return (-2);
-	buf = (char *)malloc(sizeof(char) * 1024;
+	buf = (char *)malloc(sizeof(char) * 1024);
 	if (buf == NULL)
 		return (0);
 	while (read_out > 0)
@@ -51,7 +51,7 @@ int copy_src_to_dest(const char *src, const char *dest)
 			return (-1);
 		}
 		write_out = write(fd1, buf, read_out);
-		if (read_out == -1)
+		if (write_out == -1)
 		{
 			error(fd1, fd2, buf);
 			return (-2);
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
 	}
 	
 	check = copy_src_to_dest(argv[1], argv[2]);
-	else if (check == -1)
+	if (check == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 	}
 	else if (check != 1)
 	{
-		fprintf(STDERR_FILENO, "Error: Can't close fd %d\n", check);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", check);
 		exit(100);
 	}
 	return (0);
