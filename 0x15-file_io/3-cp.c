@@ -60,7 +60,7 @@ int copy_src_to_dest(const char *src, const char *dest)
 	aux = close(fd1);
 	if (aux == -1)
 		return (fd1);
-	aux = close(fd2)l
+	aux = close(fd2);
 	if (aux == -1)
 		return (fd2);
 	free(buf);
