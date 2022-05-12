@@ -2,6 +2,7 @@
 
 /**
 * sum_dlistint - return the sum of all the data of a linked list
+* @head: pointer to head node
 *
 * Return: the sum of the data
 */
