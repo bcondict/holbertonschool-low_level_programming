@@ -33,13 +33,13 @@ int _atoi(char *s)
 	for (i = 0; i < len; i++)
 	{
 		if (s[i] == '-')
-			sign = sign + 1;
+			sign += 1;
 		else if (s[i] >= '0' && s[i] <= '9')
 			number = (number * 10) + (s[i] - '0');
 		else if (number > 0)
 			break;
 	}
 	if (sign % 2 != 0)
-		number = number * (-1);
+		number *= -1;
 	return (number);
 }
