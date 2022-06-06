@@ -4,7 +4,7 @@
 * hash_table_print - retrieves a value associated with a key
 * @ht: existent hash table
 *
-* Return: always nothing
+* Return: Always nothing
 */
 
 void hash_table_print(const hash_table_t *ht)
