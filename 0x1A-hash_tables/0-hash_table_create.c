@@ -8,21 +8,20 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *new_table = NULL;
+	hash_table_t *new_table = NULL, new_index = NULL;
 
-	if (size <= 0)
-		return (NULL);
-	new_table = (hash_table_t *)malloc(sizeof(hash_table_t));
+	new_table = malloc(sizeof(hash_table_t));
 	if (new_table == NULL)
 		return (NULL);
-	new_table->array = malloc(sizeof(hash_node_t) * size);
-	if (new_table->array == NULL)
+	new_index = calloc(sizeof(hash_node_t *));
+	if (new_index == NULL)
 	{
 		free(new_table);
 		return (NULL);
 	}
 
-	memset(new_table->array, 0, sizeof(hash_table_t) * size);
+	new_table = size
+	new_table->array = new_index
 
 	return (new_table);
 }
