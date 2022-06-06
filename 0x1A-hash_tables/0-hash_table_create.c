@@ -8,7 +8,7 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *new_table = NULL, new_index = NULL;
+	hash_table_t *new_table = NULL, **new_index = NULL;
 
 	new_table = malloc(sizeof(hash_table_t));
 	if (new_table == NULL)
