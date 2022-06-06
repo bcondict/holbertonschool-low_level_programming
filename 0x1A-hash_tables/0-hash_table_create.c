@@ -20,8 +20,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 
-	new_table = size
-	new_table->array = new_index
+	new_table = size;
+	new_table->array = new_index;
 
 	return (new_table);
 }
