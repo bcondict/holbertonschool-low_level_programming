@@ -7,7 +7,7 @@
  * @size: is the number of elements in "array".
  * @value: value to search for.
  *
- * Return: index where 'value' was found,
+ * Return: index where 'value' is located,
  *			-1 if 'value' is not present int 'array',
  *			-1 if array is NULL.
  */
