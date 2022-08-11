@@ -1,5 +1,14 @@
 #include "search_algos.h"
 
+/**
+ * to_print - print the lenght of the array to search
+ * @array: is a pointer to the first element of the searching array.
+ * @left: start of searching array.
+ * @right: end of searching array.
+ *
+ * Return: always void.
+ */
+
 void to_print(int *array, size_t left, size_t right)
 {
 	size_t i = 0;
@@ -17,7 +26,6 @@ void to_print(int *array, size_t left, size_t right)
 			printf(", %d", array[i]);
 	}
 	printf("\n");
-	return;
 }
 
 /**
