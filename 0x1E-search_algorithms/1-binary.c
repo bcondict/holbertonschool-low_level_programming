@@ -14,18 +14,9 @@ void to_print(int *array, size_t left, size_t right)
 	size_t i = 0;
 
 	printf("Searching array: ");
-	for (i = left; i <= right; i++)
-	{
-		if (i == left)
-			{
-			printf("%d", array[i]);
-			continue;
-			}
-
-		if (i > 0)
-			printf(", %d", array[i]);
-	}
-	printf("\n");
+	for (i = left; i < right; i++)
+		printf("%d, ", array[i]);
+	printf("%d\n", array[i]);
 }
 
 /**
